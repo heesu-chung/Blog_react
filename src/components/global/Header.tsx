@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaPlus } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HeaderWrapper = styled.div`
     box-sizing: border-box;
@@ -25,6 +26,10 @@ const HeaderWrapper = styled.div`
             font-weight: 600;
             padding-top: 13px;
             letter-spacing: 2px;
+            .link-logo {
+                color: #000;
+                text-decoration: none;
+            }
             cursor: pointer;
         }
         .btn {
@@ -42,9 +47,9 @@ const HeaderWrapper = styled.div`
             cursor: pointer;
             transition: 0.3s all ease-in-out;
 
-            &:hover {
+            /* &:hover {
                 background: linear-gradient(145deg, #d6d5d5, #fffefe);
-            }
+            } */
 
             @media (min-width: 1200px) {
                 display: none;
@@ -70,9 +75,9 @@ const HeaderWrapper = styled.div`
         cursor: pointer;
         transition: 0.3s all ease-in-out;
 
-        &:hover {
+        /* &:hover {
             background: linear-gradient(145deg, #d6d5d5, #fffefe);
-        }
+        } */
 
         @media (min-width: 1200px) {
             display: none;
@@ -99,13 +104,19 @@ const Header = () => {
                     <div className="btn btn-menu">
                         <FaBars className="icon" />
                     </div>
-                    <div className="logo">PIN</div>
+                    <div className="logo">
+                        <Link to="/" className="link-logo">
+                            PIN
+                        </Link>
+                    </div>
                     <div className="btn btn-profile">
                         <FaUserAlt className="icon" />
                     </div>
                 </div>
                 <div className="btn btn-create">
-                    <FaPlus className="icon" />
+                    <Link to="create-post" className="create-btn">
+                        <FaPlus className="icon" />
+                    </Link>
                 </div>
             </HeaderWrapper>
             <Blank></Blank>

@@ -1,7 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const BlogsWrapper = styled.div``;
 
 const Home = () => {
-    return <div></div>;
+    return <BlogsWrapper></BlogsWrapper>;
 };
 
 export default Home;
