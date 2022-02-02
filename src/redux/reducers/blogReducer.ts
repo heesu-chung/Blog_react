@@ -1,6 +1,6 @@
 import { GET_BLOG, GET_BLOGS } from "../types/blogTyps";
 
-const blogReducer = (state: any, action: any) => {
+const blogReducer = (state: any = {}, action: any) => {
     switch (action.type) {
         case GET_BLOG:
             return state;
@@ -10,3 +10,5 @@ const blogReducer = (state: any, action: any) => {
             return state;
     }
 };
+
+export default blogReducer;
