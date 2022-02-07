@@ -11,7 +11,7 @@ export interface AlertType {
     payload: Alert;
 }
 
-const alertReducer = (state: any = {}, action: any) => {
+const alertReducer = (state: any = {}, action: AlertType) => {
     switch (action.type) {
         case ALERT:
             return action.payload;
