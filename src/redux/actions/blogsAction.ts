@@ -8,7 +8,7 @@ export const getHomeBlogs =
         try {
             dispatch({ type: ALERT, payload: { loading: true } });
 
-            const res = await getAPI("home/blogs");
+            const res = await getAPI("blog");
 
             dispatch({
                 type: GET_BLOGS,

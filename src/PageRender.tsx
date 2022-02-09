@@ -26,6 +26,7 @@ const PageRender = () => {
     }
     console.log(`Page_RENDER | name | ` + name);
     if (name === "home") name = "";
+
     return generatePage(name);
 };
 
