@@ -6,10 +6,10 @@ import { getHomeBlogs } from "../redux/actions/blogsAction";
 import { RootStore } from "../utils/Typescript";
 
 const HomeWrapper = styled.div`
-    margin-top: 30px;
+    margin-top: 20px;
 `;
 const BlogsWrapper = styled.div`
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-decoration: none;
     transition: 0.3s all ease-in-out;
@@ -20,15 +20,18 @@ const BlogsWrapper = styled.div`
         text-decoration: none;
         color: #000;
         .title {
+            border-top: 1px solid #ccc;
             padding-top: 10px;
             font-size: 1.25rem;
             font-weight: 600;
             letter-spacing: 1px;
         }
         .content {
-            border-bottom: 1px solid #ccc;
             width: 90%;
             margin: 0 auto;
+            font-size: 12px;
+            font-weight: 200;
+            letter-spacing: 1px;
         }
     }
 `;

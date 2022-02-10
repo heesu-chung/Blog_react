@@ -34,8 +34,8 @@ const HeaderWrapper = styled.div`
         }
         .btn {
             margin-top: 10px;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             background: #eeeded;
             /* background: linear-gradient(145deg, #d6d5d5, #fffefe); */
@@ -62,8 +62,8 @@ const HeaderWrapper = styled.div`
     .btn-create {
         position: fixed;
         top: 93%;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         background: #eeeded;
         /* background: linear-gradient(145deg, #d6d5d5, #fffefe); */
