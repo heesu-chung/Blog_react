@@ -13,3 +13,8 @@ export interface GetBlogsType {
     type: typeof GET_BLOGS;
     payload: Blogs[];
 }
+
+export interface GetBlogType {
+    type: typeof GET_BLOG;
+    payload: Blog[];
+}

@@ -27,8 +27,6 @@ const BlogsWrapper = styled.div`
             letter-spacing: 1px;
         }
         .content {
-            width: 90%;
-            margin: 0 auto;
             font-size: 12px;
             font-weight: 200;
             letter-spacing: 1px;

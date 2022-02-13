@@ -61,7 +61,7 @@ const HeaderWrapper = styled.div`
     }
     .btn-create {
         position: fixed;
-        top: 93%;
+        top: 94%;
         width: 35px;
         height: 35px;
         border-radius: 50%;
