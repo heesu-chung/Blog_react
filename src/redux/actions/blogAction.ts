@@ -6,19 +6,17 @@ import { ALERT, AlertType } from "../reducers/alertReducer";
 import { GET_BLOG, GetBlogType } from "../types/blogTyps";
 
 export const getBlog =
-    () => async (dispatch: Dispatch<AlertType | GetBlogType>) => {
-        const { _id } = useSelector((state: RootStore) => state.blog);
-        console.log(`get _id from blogReducer : ${_id}`);
-
+    (id: string) => async (dispatch: Dispatch<AlertType | GetBlogType>) => {
         try {
             dispatch({ type: ALERT, payload: { loading: true } });
 
-            const res = await getAPI("/blog/${_id}");
-
+            const res = await getAPI(`blog/${id}`);
+            console.log(`get response from db`);
             dispatch({
                 type: GET_BLOG,
                 payload: res.data,
             });
+            console.log(`exec GET_BLOG`);
             dispatch({ type: ALERT, payload: { loading: false } });
         } catch (err: any) {
             dispatch({

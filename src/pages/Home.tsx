@@ -42,7 +42,6 @@ const Home = () => {
     }, [dispatch]);
 
     const { blogs } = useSelector((state: RootStore) => state);
-    console.log(blogs);
 
     return (
         <HomeWrapper>
